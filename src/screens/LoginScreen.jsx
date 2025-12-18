@@ -16,7 +16,7 @@ const LoginScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/users/login",
+        "https://mern-backend-co6f.onrender.com/api/users/login",
         { email, password }
       );
 

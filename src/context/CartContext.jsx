@@ -6,7 +6,7 @@ const CartContext = createContext();
 
 // Axios instance with JWT token
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://mern-backend-co6f.onrender.com/api",
 });
 API.interceptors.request.use((config) => {
   const storedUser = localStorage.getItem("userInfo");

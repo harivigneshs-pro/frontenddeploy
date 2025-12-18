@@ -9,7 +9,7 @@ const HomeScreen = () => {
     const fetchProducts = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/products"
+          "https://mern-backend-co6f.onrender.com/api/products"
         );
         setProducts(data);
       } catch (error) {

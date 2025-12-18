@@ -40,7 +40,7 @@ const CartScreen = () => {
       };
 
       await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://mern-backend-co6f.onrender.com/api/orders",
         { orderItems, totalPrice },
         config
       );

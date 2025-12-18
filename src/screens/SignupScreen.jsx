@@ -15,7 +15,7 @@ const SignupScreen = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://mern-backend-co6f.onrender.com/api/users/register",
         { name, email, password }
       );
       login(data);

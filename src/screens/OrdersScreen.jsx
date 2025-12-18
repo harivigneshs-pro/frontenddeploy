@@ -26,7 +26,7 @@ const OrdersScreen = () => {
           },
         };
         const { data } = await axios.get(
-          "http://localhost:5000/api/orders",
+          "https://mern-backend-co6f.onrender.com/api/orders",
           config
         );
         setOrders(data);
